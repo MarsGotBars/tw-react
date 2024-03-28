@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  /* CSS reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ul,
+  li {
+    list-style-type: none;
+  }
+
+  body {
+    @apply antialiased m-0 font-sans;
+  }
+
+  /* render de app over de hele pagina */
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+}
